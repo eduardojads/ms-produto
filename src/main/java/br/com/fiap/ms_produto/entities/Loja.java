@@ -1,10 +1,7 @@
 package br.com.fiap.ms_produto.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,9 +10,10 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode(of = "id")
 
 @Entity
-@Table(name = tb_loja)
+@Table(name = "tb_loja")
 public class Loja {
 
     @Id
